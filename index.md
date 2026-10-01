@@ -72,8 +72,6 @@ body { overflow-x: hidden; background: #F8FAFC; }
   </div>
 </div>
 
-안드로이드 앱을 만듭니다.
-
 ## QuickBar (퀵바)
 
 알림바에 자주 쓰는 앱·웹주소·연락처를 놓고 한 번에 여는 런처입니다.
