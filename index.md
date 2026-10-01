@@ -48,16 +48,14 @@ body { overflow-x: hidden; background: #F8FAFC; }
   font-size: 14px;
   color: #8D8EDB;               /* toolbar_slogan */
 }
-.qb-logo { display: block; height: 26px; width: auto; margin: 0 0 14px; }
 
 /*
   테마는 투명 PNG 가 어두운 바탕에서 묻히지 않게 `.markdown-body img` 에 흰 배경을
-  깔아 둔다. 우리 마크와 로고에는 그 흰 판이 네모로 그대로 보인다. 선택자에
+  깔아 둔다. 우리 마크에는 그 흰 판이 네모로 그대로 보인다. 선택자에
   `.markdown-body` 를 같이 적는 것은 특이도 때문이다 — 클래스만으로는 테마 규칙에
   밀려 안 먹는다.
 */
-.markdown-body img.qb-hero__mark,
-.markdown-body img.qb-logo { background: none; }
+.markdown-body img.qb-hero__mark { background: none; }
 
 @media (max-width: 600px) {
   .qb-hero__inner { padding: 28px 16px 40px; }
@@ -77,8 +75,6 @@ body { overflow-x: hidden; background: #F8FAFC; }
 안드로이드 앱을 만듭니다.
 
 ## QuickBar (퀵바)
-
-<img class="qb-logo" src="./assets/quickbar-logo.png" alt="QuickBar">
 
 알림바에 자주 쓰는 앱·웹주소·연락처를 놓고 한 번에 여는 런처입니다.
 
