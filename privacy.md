@@ -11,7 +11,7 @@ title: QuickBar Privacy Policy
 
 # 퀵바 개인정보처리방침
 
-시행일: 2026년 9월 28일
+시행일: 2026년 10월 1일
 
 퀵바(QuickBar, 이하 "앱")는 The KHAN's App Studio(이하 "개발자")가 만듭니다. 이 문서는
 앱이 어떤 정보를 다루고, 어디에 두고, 언제 지우는지 적은 것입니다.
@@ -60,7 +60,7 @@ title: QuickBar Privacy Policy
 |---|---|---|
 | Google AdMob | 무료 사용자에게 광고 표시 | 광고 ID, 기기 정보, IP 주소, 앱 사용 기록 |
 | Google 사용자 메시지 플랫폼(UMP) | 유럽·영국 사용자 광고 동의 수집 | 동의 상태 |
-| Firebase Analytics | 어느 화면이 쓰이는지 파악 | 화면 이름, 기기 정보(익명) |
+| Firebase Analytics | 어느 화면·기능이 쓰이는지 파악 | 화면 이름, 누른 버튼, 설정 값(퀵바 크기·배경 종류·아이콘 간격과 투명도·이름 표시 여부), 바로가기 **종류**(앱 / 웹주소 / 연락처)와 채워 둔 칸 수, 알림·위젯을 켜 두었는지, 권한을 허용했는지, 프리미엄·리워드 상태, 백업·복구 성공 여부, 기기 정보(익명). **바로가기에 넣은 앱·주소·전화번호·이름과, 고른 색·사진은 보내지 않습니다** |
 | Firebase Crashlytics | 앱이 꺼졌을 때 원인 파악 | 오류 기록, 기기 정보 |
 | Google Play 결제 | 프리미엄 결제 | 구매 여부. 카드 정보는 구글이 처리하며 앱은 받지 않습니다 |
 | Google Drive | 백업·복구 | 위 2항의 앱 전용 폴더 |
@@ -95,7 +95,7 @@ khans.appstudio@gmail.com
 
 **[한국어](#퀵바-개인정보처리방침) · [English](#quickbar-privacy-policy)**
 
-Effective: September 28, 2026
+Effective: October 1, 2026
 
 QuickBar ("the app") is made by The KHAN's App Studio ("the developer"). This page
 explains what the app handles, where it is kept, and when it is deleted.
@@ -129,7 +129,12 @@ files. Delete it via Google Drive → Settings → Manage apps → QuickBar.
 ## 3. Third-party services
 
 Google AdMob (ads for free users: advertising ID, device info, IP, app usage), Google
-User Messaging Platform (consent in the EEA/UK), Firebase Analytics (screen names),
+User Messaging Platform (consent in the EEA/UK), Firebase Analytics (screen names, buttons
+tapped, setting values such as grid size and icon spacing, the **kind** of shortcut you add
+(app / web link / contact) and how many slots are filled, whether the notification bar or
+the widget is turned on, whether you granted a permission, premium/reward state, and whether
+a backup or restore succeeded — never the apps, addresses, phone numbers, or names you put
+in shortcuts, nor the colours or photos you pick),
 Firebase Crashlytics (crash reports), Google Play Billing (purchase state only — card
 details are handled by Google), and Google Drive (backup). See
 https://policies.google.com/privacy.
