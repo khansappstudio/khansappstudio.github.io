@@ -50,6 +50,15 @@ body { overflow-x: hidden; background: #F8FAFC; }
 }
 .qb-logo { display: block; height: 26px; width: auto; margin: 0 0 14px; }
 
+/*
+  테마는 투명 PNG 가 어두운 바탕에서 묻히지 않게 `.markdown-body img` 에 흰 배경을
+  깔아 둔다. 우리 마크와 로고에는 그 흰 판이 네모로 그대로 보인다. 선택자에
+  `.markdown-body` 를 같이 적는 것은 특이도 때문이다 — 클래스만으로는 테마 규칙에
+  밀려 안 먹는다.
+*/
+.markdown-body img.qb-hero__mark,
+.markdown-body img.qb-logo { background: none; }
+
 @media (max-width: 600px) {
   .qb-hero__inner { padding: 28px 16px 40px; }
   .qb-hero__mark  { width: 48px; height: 48px; }
