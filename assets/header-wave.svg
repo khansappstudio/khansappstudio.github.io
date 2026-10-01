@@ -1,0 +1,63 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1655 950"
+     preserveAspectRatio="none" role="img" aria-label="QuickBar header background">
+  <title>QuickBar header background</title>
+  <!--
+    앱 메인 헤더 배경(app/src/main/res/drawable/bg_header_wave.xml)을 그대로 옮긴 것이다.
+    패스 좌표와 그라데이션 값은 한 글자도 바꾸지 않았고, 안드로이드의 #AARRGGBB 를
+    stop-color + stop-opacity 두 칸으로 나눠 적었을 뿐이다. 원본 주석(층을 왜 이렇게
+    쌓았는지, 물결 좌표를 어떻게 잡았는지)은 그 파일에 있다.
+
+    preserveAspectRatio="none" 가 핵심이다. 앱은 이 벡터를 ImageView 의 fitXY 로 늘려
+    쓰는데, SVG 는 기본값이 비율 유지(meet)라 그대로 두면 좌우에 여백이 생긴다.
+    CSS 쪽도 background-size: 100% 100% 로 맞춰 둔다.
+  -->
+  <defs>
+    <!-- 2) 오른쪽 위 보라 번짐 -->
+    <radialGradient id="violet" gradientUnits="userSpaceOnUse" cx="1572" cy="-220" r="1250">
+      <stop offset="0"    stop-color="#CFB0FB" stop-opacity="1"/>
+      <stop offset="0.40" stop-color="#D3B6FA" stop-opacity="0.886"/>
+      <stop offset="1"    stop-color="#DDEAFD" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- 3) 분홍 번짐 -->
+    <radialGradient id="pink" gradientUnits="userSpaceOnUse" cx="1010" cy="60" r="560">
+      <stop offset="0"    stop-color="#F7C9FB" stop-opacity="0.957"/>
+      <stop offset="0.45" stop-color="#F5D2FC" stop-opacity="0.420"/>
+      <stop offset="1"    stop-color="#F5D2FC" stop-opacity="0"/>
+    </radialGradient>
+
+    <!-- 4) 아래로 갈수록 화면 배경색(brand_surface #F8FAFC)으로 끝난다 -->
+    <linearGradient id="fade" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="0" y2="950">
+      <stop offset="0"    stop-color="#F8FAFC" stop-opacity="0"/>
+      <stop offset="0.34" stop-color="#F8FAFC" stop-opacity="0.102"/>
+      <stop offset="0.55" stop-color="#F8FAFC" stop-opacity="0.451"/>
+      <stop offset="0.78" stop-color="#F8FAFC" stop-opacity="0.878"/>
+      <stop offset="0.9"  stop-color="#F8FAFC" stop-opacity="1"/>
+      <stop offset="1"    stop-color="#F8FAFC" stop-opacity="1"/>
+    </linearGradient>
+
+    <!-- 5) 큰 물결 -->
+    <linearGradient id="waveBig" gradientUnits="userSpaceOnUse" x1="0" y1="292" x2="0" y2="820">
+      <stop offset="0"   stop-color="#FFFFFF" stop-opacity="0.251"/>
+      <stop offset="0.6" stop-color="#FFFFFF" stop-opacity="0.102"/>
+      <stop offset="1"   stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- 6) 작은 물결 -->
+    <linearGradient id="waveSmall" gradientUnits="userSpaceOnUse" x1="0" y1="420" x2="0" y2="950">
+      <stop offset="0"    stop-color="#FFFFFF" stop-opacity="0.651"/>
+      <stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0.400"/>
+      <stop offset="1"    stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 1) 바탕 -->
+  <rect width="1655" height="950" fill="#DDEAFD"/>
+  <rect width="1655" height="950" fill="url(#violet)"/>
+  <rect width="1655" height="950" fill="url(#pink)"/>
+  <rect width="1655" height="950" fill="url(#fade)"/>
+  <path d="M0,352 C120,400 170,478 310,478 C612,478 680,292 982,292 C1285,292 1352,478 1655,478 L1655,950 L0,950 Z"
+        fill="url(#waveBig)"/>
+  <path d="M0,542 C105,536 149,528 270,528 C583,528 652,850 965,850 C1275,850 1420,520 1655,420 L1655,950 L0,950 Z"
+        fill="url(#waveSmall)"/>
+</svg>

@@ -1,0 +1,76 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64"
+     role="img" aria-label="QuickBar mark (boxed)">
+  <title>QuickBar mark (boxed)</title>
+  <!--
+    브랜드 마크를 사각 배경에 얹은 변형. 마크 자체(quickbar_mark.svg)는
+    도형을 그대로 두고 0.7 배로 줄여 배경 한가운데에 놓았다.
+
+    배경은 왼쪽 위 하늘빛에서 오른쪽 아래 라벤더로 넘어가는 그라데이션 위에
+    금속판처럼 빛을 얹었다. 바탕색 -> 금속 광택(위 밝음/허리 그늘/바닥 반사)
+    -> 테두리 림라이트 순으로 같은 사각을 세 번 겹쳐 그린다.
+    바탕색은 광택을 얹었을 때 제 색이 나오도록 한 단계 진하게 잡아 두었다.
+  -->
+  <defs>
+    <linearGradient id="qbBoxBg" x1="2" y1="2" x2="62" y2="62" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#33B3FF"/>
+      <stop offset="0.5" stop-color="#9A9BFF"/>
+      <stop offset="1" stop-color="#DA91FF"/>
+    </linearGradient>
+    <linearGradient id="qbBoxSheen" x1="32" y1="2" x2="32" y2="62" gradientUnits="userSpaceOnUse">
+      <stop offset="0.0000" stop-color="#FFFFFF" stop-opacity="0.1998"/>
+      <stop offset="0.0500" stop-color="#FFFFFF" stop-opacity="0.1947"/>
+      <stop offset="0.1000" stop-color="#FFFFFF" stop-opacity="0.1806"/>
+      <stop offset="0.1500" stop-color="#FFFFFF" stop-opacity="0.1591"/>
+      <stop offset="0.2000" stop-color="#FFFFFF" stop-opacity="0.1330"/>
+      <stop offset="0.2500" stop-color="#FFFFFF" stop-opacity="0.1050"/>
+      <stop offset="0.3000" stop-color="#FFFFFF" stop-opacity="0.0777"/>
+      <stop offset="0.3500" stop-color="#FFFFFF" stop-opacity="0.0529"/>
+      <stop offset="0.4000" stop-color="#FFFFFF" stop-opacity="0.0317"/>
+      <stop offset="0.4500" stop-color="#FFFFFF" stop-opacity="0.0146"/>
+      <stop offset="0.5000" stop-color="#FFFFFF" stop-opacity="0.0014"/>
+      <stop offset="0.5500" stop-color="#000000" stop-opacity="0.0082"/>
+      <stop offset="0.6000" stop-color="#000000" stop-opacity="0.0146"/>
+      <stop offset="0.6500" stop-color="#000000" stop-opacity="0.0179"/>
+      <stop offset="0.7000" stop-color="#000000" stop-opacity="0.0181"/>
+      <stop offset="0.7500" stop-color="#000000" stop-opacity="0.0145"/>
+      <stop offset="0.8000" stop-color="#000000" stop-opacity="0.0060"/>
+      <stop offset="0.8500" stop-color="#FFFFFF" stop-opacity="0.0068"/>
+      <stop offset="0.9000" stop-color="#FFFFFF" stop-opacity="0.0214"/>
+      <stop offset="0.9500" stop-color="#FFFFFF" stop-opacity="0.0327"/>
+      <stop offset="1.0000" stop-color="#FFFFFF" stop-opacity="0.0362"/>
+    </linearGradient>
+    <linearGradient id="qbBoxRim" x1="32" y1="2" x2="32" y2="62" gradientUnits="userSpaceOnUse">
+      <stop offset="0"    stop-color="#FFFFFF" stop-opacity="0.55"/>
+      <stop offset="0.55" stop-color="#FFFFFF" stop-opacity="0.12"/>
+      <stop offset="1"    stop-color="#FFFFFF" stop-opacity="0.23"/>
+    </linearGradient>
+    <linearGradient id="qbBarBoxed" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- 바탕 -->
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#qbBoxBg)"/>
+  <rect x="2" y="2" width="60" height="60" rx="14" fill="url(#qbBoxSheen)"/>
+  <rect x="2.6" y="2.6" width="58.8" height="58.8" rx="13.4" fill="none"
+        stroke="url(#qbBoxRim)" stroke-width="1.2"/>
+
+  <!--
+    마크. 네 칸의 좌표는 ic_brand_mark_boxed.xml 의 패스를 그대로 가져왔다.
+
+    예전에는 칸 하나를 defs 에 두고 네 번 참조해 썼다. 브라우저에서는 멀쩡하지만
+    참조를 따라가지 않는 렌더러(윈도우 탐색기 썸네일, 일부 뷰어·에디터 미리보기)에서는
+    칸이 통째로 빠져 배경 사각형만 남는다. 아끼는 것이 1KB 도 안 되는데 그 대가로
+    "어떤 데서는 안 보인다" 를 떠안을 이유가 없어 네 개를 그대로 적는다.
+  -->
+  <g transform="translate(9.6 9.4) scale(0.7)">
+    <g fill="#FFFFFF" fill-rule="evenodd">
+      <path d="M14,5 h12 a4,4 0 0 1 4,4 v10 a4,4 0 0 1 -4,4 h-12 a4,4 0 0 1 -4,-4 v-10 a4,4 0 0 1 4,-4 z M16.2,9 h7.6 a2.2,2.2 0 0 1 2.2,2.2 v5.6 a2.2,2.2 0 0 1 -2.2,2.2 h-7.6 a2.2,2.2 0 0 1 -2.2,-2.2 v-5.6 a2.2,2.2 0 0 1 2.2,-2.2 z"/>
+      <path d="M38,5 h12 a4,4 0 0 1 4,4 v10 a4,4 0 0 1 -4,4 h-12 a4,4 0 0 1 -4,-4 v-10 a4,4 0 0 1 4,-4 z M40.2,9 h7.6 a2.2,2.2 0 0 1 2.2,2.2 v5.6 a2.2,2.2 0 0 1 -2.2,2.2 h-7.6 a2.2,2.2 0 0 1 -2.2,-2.2 v-5.6 a2.2,2.2 0 0 1 2.2,-2.2 z"/>
+      <path d="M14,27 h12 a4,4 0 0 1 4,4 v10 a4,4 0 0 1 -4,4 h-12 a4,4 0 0 1 -4,-4 v-10 a4,4 0 0 1 4,-4 z M16.2,31 h7.6 a2.2,2.2 0 0 1 2.2,2.2 v5.6 a2.2,2.2 0 0 1 -2.2,2.2 h-7.6 a2.2,2.2 0 0 1 -2.2,-2.2 v-5.6 a2.2,2.2 0 0 1 2.2,-2.2 z"/>
+      <path d="M38,27 h12 a4,4 0 0 1 4,4 v10 a4,4 0 0 1 -4,4 h-12 a4,4 0 0 1 -4,-4 v-10 a4,4 0 0 1 4,-4 z M40.2,31 h7.6 a2.2,2.2 0 0 1 2.2,2.2 v5.6 a2.2,2.2 0 0 1 -2.2,2.2 h-7.6 a2.2,2.2 0 0 1 -2.2,-2.2 v-5.6 a2.2,2.2 0 0 1 2.2,-2.2 z"/>
+    </g>
+    <rect x="30" y="47" width="4" height="13" rx="2" fill="url(#qbBarBoxed)"/>
+  </g>
+</svg>
